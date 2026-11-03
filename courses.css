@@ -1,0 +1,518 @@
+/* ===============================
+   RESET
+================================= */
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0F172A;
+    overflow-x:hidden;
+}
+
+.wrapper{
+    display:flex;
+}
+
+/* ===============================
+   SIDEBAR
+================================= */
+
+.sidebar{
+    width:250px;
+    height:100vh;
+    background:#111827;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:30px 20px;
+}
+
+.logo h2{
+    color:#fff;
+    font-size:34px;
+    font-weight:700;
+}
+
+.logo span{
+    color:#9f3aed;
+}
+
+.logo p{
+    color:#94A3B8;
+    margin-top:5px;
+    margin-bottom:40px;
+    font-size:14px;
+}
+
+.menu{
+    list-style:none;
+}
+
+.menu li{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:#E5E7EB;
+    padding:14px 16px;
+    margin-bottom:12px;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.menu li:hover{
+    background:#1E293B;
+}
+
+.menu li.active{
+    background:#9f3aed;
+}
+
+.menu li i{
+    width:22px;
+    text-align:center;
+}
+
+/* ===============================
+   MAIN CONTENT
+================================= */
+
+.main-content{
+    margin-left:250px;
+    width:calc(100% - 250px);
+    padding:35px;
+}
+
+/* ===============================
+   TOPBAR
+================================= */
+
+.topbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:35px;
+}
+
+.search-box{
+    width:420px;
+    height:50px;
+    background:#1E293B;
+    border-radius:30px;
+    display:flex;
+    align-items:center;
+    padding:0 18px;
+}
+
+.search-box i{
+    color:#9c3aed;
+}
+
+.search-box input{
+    width:100%;
+    margin-left:12px;
+    background:none;
+    border:none;
+    outline:none;
+    color:#fff;
+    font-size:15px;
+}
+
+.search-box input::placeholder{
+    color:#94A3B8;
+}
+
+.top-icons{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.top-icons i{
+    color:#fff;
+    font-size:22px;
+    cursor:pointer;
+}
+
+.profile{
+    width:42px;
+    height:42px;
+    border-radius:50%;
+    background:#1E293B;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border:2px solid #933aed;
+}
+
+/* ===============================
+   PAGE TITLE
+================================= */
+
+.page-title{
+    margin-bottom:25px;
+}
+
+.page-title h1{
+    color:#fff;
+    font-size:40px;
+    font-weight:700;
+}
+
+.page-title p{
+    color:#94A3B8;
+    margin-top:8px;
+}
+
+/* ===============================
+   CATEGORY BUTTONS
+================================= */
+
+.categories{
+    display:flex;
+    gap:15px;
+    margin-bottom:35px;
+    flex-wrap:wrap;
+}
+
+.categories button{
+    background:#1E293B;
+    color:#fff;
+    border:none;
+    padding:12px 24px;
+    border-radius:30px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.categories button:hover{
+    background:#7C3AED;
+}
+
+.categories button.active{
+    background:#7C3AED;
+}
+
+/* ===============================
+   HERO
+================================= */
+
+.hero{
+    background:linear-gradient(135deg,#7C3AED,#5B21B6);
+    border-radius:20px;
+    padding:40px;
+    margin-bottom:40px;
+}
+
+.hero h2{
+    color:#fff;
+    font-size:34px;
+    margin-bottom:15px;
+}
+
+.hero p{
+    color:#E5E7EB;
+    line-height:1.8;
+    max-width:650px;
+    margin-bottom:20px;
+}
+
+.hero button{
+    background:#fff;
+    color:#7C3AED;
+    border:none;
+    padding:12px 28px;
+    border-radius:30px;
+    font-weight:600;
+    cursor:pointer;
+}
+/* ===============================
+   COURSE GRID
+================================= */
+
+.course-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:30px;
+
+    margin-bottom:40px;
+
+}
+
+/* ===============================
+   COURSE CARD
+================================= */
+
+.course-card{
+
+    background:#1E293B;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    transition:.3s;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+
+}
+
+.course-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 15px 35px rgba(124,58,237,.35);
+
+}
+
+.course-card img{
+
+    width:100%;
+
+    height:220px;
+
+    object-fit:cover;
+
+}
+
+.course-content{
+
+    padding:22px;
+
+}
+
+.course-content h3{
+
+    color:#fff;
+
+    margin:18px 0 12px;
+
+    font-size:24px;
+
+}
+
+.course-content p{
+
+    color:#CBD5E1;
+
+    line-height:1.7;
+
+    min-height:55px;
+
+    margin-bottom:20px;
+
+}
+
+/* ===============================
+   LEVEL BADGES
+================================= */
+
+.level{
+
+    display:inline-block;
+
+    padding:8px 16px;
+
+    border-radius:20px;
+
+    font-size:13px;
+
+    font-weight:600;
+
+}
+
+.beginner{
+
+    background:#22C55E;
+
+    color:#fff;
+
+}
+
+.intermediate{
+
+    background:#FACC15;
+
+    color:#111827;
+
+}
+
+.advanced{
+
+    background:#EF4444;
+
+    color:#fff;
+
+}
+
+/* ===============================
+   BUTTON
+================================= */
+
+.course-content button{
+
+    width:100%;
+
+    padding:12px;
+
+    background:#7C3AED;
+
+    color:#fff;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.course-content button:hover{
+
+    background:#9333EA;
+
+}
+
+/* ===============================
+   RESPONSIVE
+================================= */
+
+@media(max-width:992px){
+
+    .course-grid{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .sidebar{
+
+        display:none;
+
+    }
+
+    .main-content{
+
+        margin-left:0;
+
+        width:100%;
+
+    }
+
+    .course-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+    .topbar{
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+}
+/* ===============================
+   COURSE GRID
+=============================== */
+
+.course-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    gap:30px;
+    margin-top:40px;
+}
+
+/* ===============================
+   COURSE CARD
+=============================== */
+
+.course-card{
+    background:#1E293B;
+    border-radius:20px;
+    overflow:hidden;
+    transition:0.3s;
+    box-shadow:0 8px 20px rgba(0,0,0,.25);
+}
+
+.course-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 15px 35px rgba(124,58,237,.35);
+}
+
+.course-card img{
+    width:100%;
+    height:220px;
+    object-fit:cover;
+}
+
+.course-content{
+    padding:22px;
+}
+
+.course-content h3{
+    color:#fff;
+    font-size:24px;
+    margin:18px 0 10px;
+    font-weight:600;
+}
+
+.course-content p{
+    color:#CBD5E1;
+    line-height:1.7;
+    font-size:15px;
+    min-height:60px;
+    margin-bottom:20px;
+}
+
+.menu li a{
+    text-decoration:none;
+    color:#E5E7EB;
+    display:flex;
+    align-items:center;
+    gap:15px;
+    width:100%;
+}
+
+.menu li a:hover{
+    color:#fff;
+}
+.menu li a{
+    display:flex;
+    align-items:center;
+    gap:15px;
+    color:#E5E7EB;
+    text-decoration:none;
+    width:100%;
+}
+
+.menu li a:hover{
+    color:#fff;
+}

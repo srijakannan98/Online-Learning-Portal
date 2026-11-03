@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>EduCom | Dashboard</title>
+
+<link rel="stylesheet" href="../css/dashboard.css?v=1">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<!-- SIDEBAR -->
+
+<div class="sidebar">
+
+<h2>EduCom</h2>
+
+<ul>
+
+<li class="active">
+
+<i class="fa-solid fa-house"></i>
+
+Dashboard
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-book"></i>
+
+Courses
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-video"></i>
+
+Videos
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-file-pdf"></i>
+
+PDF Notes
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-clipboard-question"></i>
+
+Quiz
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-user"></i>
+
+Profile
+
+</li>
+
+<li>
+
+<i class="fa-solid fa-right-from-bracket"></i>
+
+Logout
+
+</li>
+
+</ul>
+
+</div>
+
+<!-- MAIN -->
+
+<div class="main">
+
+<!-- TOPBAR -->
+
+<div class="topbar">
+
+<h2>
+
+Welcome Back, Srija 👋
+
+</h2>
+
+<div class="top-icons">
+
+<i class="fa-solid fa-bell"></i>
+
+<i class="fa-solid fa-user-circle"></i>
+
+</div>
+
+</div>
+
+<!-- CARDS -->
+
+<div class="cards">
+
+<div class="card">
+
+<i class="fa-solid fa-book"></i>
+
+<h3>12</h3>
+
+<p>Total Courses</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-video"></i>
+
+<h3>38</h3>
+
+<p>Videos</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-file-circle-question"></i>
+
+<h3>8</h3>
+
+<p>Quizzes</p>
+
+</div>
+
+<div class="card">
+
+<i class="fa-solid fa-award"></i>
+
+<h3>3</h3>
+
+<p>Certificates</p>
+
+</div>
+
+</div>
+<!-- CONTINUE LEARNING -->
+
+<div class="learning">
+
+<h2>Continue Learning</h2>
+
+<div class="progress-card">
+
+<div class="course">
+
+<h4>HTML & CSS</h4>
+
+<div class="progress">
+
+<div class="bar html"></div>
+
+</div>
+
+<span>80%</span>
+
+</div>
+
+<div class="course">
+
+<h4>JavaScript</h4>
+
+<div class="progress">
+
+<div class="bar js"></div>
+
+</div>
+
+<span>50%</span>
+
+</div>
+
+<div class="course">
+
+<h4>PHP</h4>
+
+<div class="progress">
+
+<div class="bar php"></div>
+
+</div>
+
+<span>20%</span>
+
+</div>
+
+</div>
+
+</div>
+
+<!-- RECENT ACTIVITIES -->
+
+<div class="activity">
+
+<h2>Recent Activities</h2>
+
+<ul>
+
+<li>✅ HTML Quiz Completed</li>
+
+<li>✅ CSS Notes Downloaded</li>
+
+<li>✅ JavaScript Video Watched</li>
+
+<li>✅ PHP Basics Started</li>
+
+</ul>
+
+</div>
+
+<!-- QUICK ACTIONS -->
+
+<div class="quick-actions">
+
+<h2>Quick Actions</h2>
+
+<div class="action-buttons">
+
+<button>📚 Browse Courses</button>
+
+<button>🎥 Watch Videos</button>
+
+<button>📝 Take Quiz</button>
+
+<button>👤 My Profile</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</body>
+
+</html>
